@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soumbala Naturel - Nos Produits</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Soumbala Naturel</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="produits.html" class="active">Nos Produits</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-title">
+            <h1>Nos Produits</h1>
+            <p>Choisissez le format qui correspond à vos besoins et passez commande.</p>
+        </section>
+
+        <section class="produits-section">
+            <div class="produits-grid">
+                <div class="produit-card">
+                    <img src="https://images.unsplash.com/photo-1600275669439-14e40452d20b?w=600" alt="Sachet de soumbala 250g">
+                    <h3>Sachet 250 g</h3>
+                    <p class="prix">2 000 FCFA</p>
+                    <p class="description">
+                        Idéal pour découvrir le soumbala ou pour un usage occasionnel.
+                        Emballage refermable.
+                    </p>
+                    <button class="btn-commander" data-produit="Sachet 250 g">Commander</button>
+                </div>
+
+                <div class="produit-card">
+                    <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?w=600" alt="Sachet de soumbala 500g">
+                    <h3>Sachet 500 g</h3>
+                    <p class="prix">3 500 FCFA</p>
+                    <p class="description">
+                        Le format familial par excellence pour vos sauces et plats
+                        quotidiens.
+                    </p>
+                    <button class="btn-commander" data-produit="Sachet 500 g">Commander</button>
+                </div>
+
+                <div class="produit-card">
+                    <img src="https://images.unsplash.com/photo-1610725664285-7c57e6eeac3f?w=600" alt="Pot de soumbala 1kg">
+                    <h3>Pot 1 kg</h3>
+                    <p class="prix">6 000 FCFA</p>
+                    <p class="description">
+                        Pour les grandes familles et les restaurateurs. Excellent rapport
+                        qualité-prix.
+                    </p>
+                    <button class="btn-commander" data-produit="Pot 1 kg">Commander</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="commande-section">
+            <h2>Passer commande</h2>
+            <p>Remplissez le formulaire ci-dessous et nous vous contacterons rapidement.</p>
+
+            <div class="commande-container">
+                <div class="commande-image">
+                    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600" alt="Plat africain au soumbala">
+                </div>
+
+                <form id="commandeForm" class="commande-form">
+                    <div class="form-group">
+                        <label for="nom">Nom complet</label>
+                        <input type="text" id="nom" name="nom" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Adresse email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telephone">Téléphone</label>
+                        <input type="tel" id="telephone" name="telephone" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="produit">Produit souhaité</label>
+                        <select id="produit" name="produit" required>
+                            <option value="">-- Choisir un produit --</option>
+                            <option value="Sachet 250 g">Sachet 250 g - 2 000 FCFA</option>
+                            <option value="Sachet 500 g">Sachet 500 g - 3 500 FCFA</option>
+                            <option value="Pot 1 kg">Pot 1 kg - 6 000 FCFA</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="quantite">Quantité</label>
+                        <input type="number" id="quantite" name="quantite" min="1" value="1" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="adresse">Adresse de livraison</label>
+                        <textarea id="adresse" name="adresse" rows="3" required></textarea>
+                    </div>
+
+                    <button type="submit">Envoyer la commande</button>
+                    <p id="formMessage" class="form-message"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>2024 Soumbala Naturel. Tous droits réservés. Produit du Burkina Faso.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
